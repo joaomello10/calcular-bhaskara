@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>Calcular Bhaskara</title>
+  </head>
+  <body>
+    <header>
+      <h1>Calcular Bhaskara <img src="img/favicon.ico" alt="" /></h1>
+      <div id="Creditos">
+        © Creditos :
+        <a href="https://github.com/dev-pedro75" target="_blank">João Mello</a>
+      </div>
+    </header>
+    <main>
+      <div id="colunm">
+        <div id="inputs">
+          <label for="a">a</label>
+          <input type="number" id="a" placeholder="Valor de a" />
+
+          <label for="b">b</label>
+          <input type="number" id="b" placeholder="Valor de b" />
+
+          <label for="c"> c</label>
+          <input type="number" id="c" placeholder="Valor de c" />
+
+          <button onclick="change()">Calcular</button>
+        </div>
+        <p id="expression">f(x) = ax² + bx + c</p>
+        <p id="resultp"></p>
+        <div id="result">
+          <p id="delta">Δ(Delta) =</p>
+          <p id="deltar">Δ(Raiz) =</p>
+          <p id="x1">X1 =</p>
+          <p id="x2">X2 =</p>
+          <p id="xv">X vertice =</p>
+          <p id="yv">Y vertice =</p>
+        </div>
+        <div id="share">
+          <a
+            href="https://wa.me/?text=Quer%20calcular%20bhaskara?Acesse%20https://calcular-bhaskara.netlify.app"
+          >
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

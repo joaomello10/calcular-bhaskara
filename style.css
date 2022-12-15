@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #555;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  text-align: center;
+  padding: 50px;
+  font-size: 2rem;
+  font-family: "Apple Chancery", "Courier New", Courier, monospace !important;
+}
+
+header h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Courgette", cursive;
+}
+
+label {
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+}
+main {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+#colunm {
+  display: flex;
+  flex-direction: column;
+}
+
+#inputs {
+  display: flex;
+  align-items: center;
+}
+
+#inputs input {
+  margin: 0 10px;
+  outline: none;
+}
+
+p {
+  margin: 20px 0;
+  text-align: center;
+  color: rgb(94, 187, 213);
+  transition: 0.3s;
+  font-size: 1.8rem;
+}
+
+p span {
+  text-decoration: underline;
+  color: white;
+}
+
+input {
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+  transition: 0.2s;
+}
+
+input:focus-within {
+  transform: scale(1.1);
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 191, 36);
+  color: white;
+  border: none;
+  outline: none;
+  transition: 0.1s;
+  border-radius: 5px;
+}
+
+button:active {
+  background-color: green;
+  transform: scale(1.1);
+}
+
+@media (max-width: 838px) {
+  #inputs {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #inputs input {
+    margin: 10px 0;
+  }
+  button {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 314px) {
+  header {
+    font-size: 1.1rem;
+  }
+
+  #expression {
+    font-size: 0.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  header {
+    font-size: 1.3rem;
+  }
+  #expression {
+    font-size: 1rem;
+  }
+}
+
+#Creditos {
+  height: 100%;
+  margin: auto 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: arial;
+  color: rgb(66, 170, 230);
+}
+
+#Creditos a {
+  color: rgb(71, 183, 248);
+}
+
+#result {
+  display: none;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+#expression {
+  font-size: 1.7rem;
+  font-family: "Courgette", cursive;
+
+  margin: 20px auto;
+  padding: 5px;
+
+  color: rgb(235, 199, 19);
+}
+
+#resultp {
+  color: rgb(255, 255, 255);
+}
+
+.anime {
+  animation: anime 0.4s ease-out;
+}
+
+@keyframes anime {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#share {
+  display: flex;
+  justify-content: center;
+}
+
+#share a {
+  color: white;
+}
+
+#share a {
+  display: inline-block;
+
+  width: 70px;
+  height: 70px;
+  margin: 50px auto;
+  background-size: 100% 100%; /* ou 'contain' */
+  background-image: url("https://www.imagemhost.com.br/images/2021/06/02/whatsapp-logo-png-transparent-background-3.md.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
