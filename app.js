@@ -30,6 +30,9 @@ function solveRoots(a, b, c) {
 function solveVertice(a, b, c) {
   const delta = solveDelta(a, b, c);
   if (!Number.isInteger(Math.sqrt(delta))) {
+    const vx = "indefinido";
+    const vy = "indefinido";
+    return { vx, vy };
     return;
   }
   const roots = solveRoots(a, b, c);
@@ -42,6 +45,8 @@ function solveVertice(a, b, c) {
 function solveBhaskara(a, b, c) {
   const roots = solveRoots(a, b, c);
   const vertices = solveVertice(a, b, c);
+
+  console.log(vertices);
 
   const bhaskaraResult = {
     delta: solveDelta(a, b, c),
@@ -76,9 +81,14 @@ function change() {
   document.querySelector(
     "#delta"
   ).innerHTML = `Δ(Delta)  = <span>${bhaskaraResult.delta}</span> `;
-  document.querySelector("#deltar").innerHTML = `Δ(Raiz)  = <span>${Math.sqrt(
-    bhaskaraResult.delta
-  )}</span> `;
+
+  if (Number.isInteger(Math.sqrt(bhaskaraResult.delta))) {
+    document.querySelector("#deltar").innerHTML = `Δ(Raiz)  = <span>${Math.sqrt(
+      bhaskaraResult.delta
+    )}</span> `;
+  } else {
+    document.querySelector("#deltar").innerHTML = ``;
+  }
 
   if (!Number.isInteger(Math.sqrt(bhaskaraResult.delta))) {
     x1.textContent = "";
